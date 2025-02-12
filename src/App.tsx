@@ -1,20 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X, Github, Twitter, Linkedin, Mail } from 'lucide-react';
-
-// Router Components
-const Link = ({ to, children, className }) => (
-  <a
-    href={to}
-    className={className}
-    onClick={(e) => {
-      e.preventDefault();
-      window.history.pushState({}, '', to);
-      window.dispatchEvent(new PopStateEvent('popstate'));
-    }}
-  >
-    {children}
-  </a>
-);
+import Link from './components/Link';
 
 // Navigation config
 const navItems = [
