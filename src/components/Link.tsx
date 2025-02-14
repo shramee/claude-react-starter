@@ -9,6 +9,7 @@ const Link = ({ to, children, className }: LinkProps) => (
 		href={to}
 		className={className}
 		onClick={(e) => {
+			if (to.startsWith('http')) return;
 			e.preventDefault();
 			window.history.pushState({}, '', to);
 			window.dispatchEvent(new PopStateEvent('popstate'));

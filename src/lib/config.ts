@@ -1,8 +1,7 @@
 // Navigation config
 export const navItems = [
 	{ path: '/', label: 'Home' },
-	{ path: '/about', label: 'About' },
-	{ path: '/services', label: 'Services' },
-	{ path: '/contact', label: 'Contact' }
+	// add classnames to style the buttons
+	{ path: '/app', label: 'App' },
 ];
 
